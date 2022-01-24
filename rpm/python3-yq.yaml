@@ -7,10 +7,9 @@ Release: 0
 Group: Applications
 License: Apache-2.0
 URL: https://pypi.org/project/yq/
-Macros:
-  - 'int_name;yt'
 Sources:
-    - 'https://files.pythonhosted.org/packages/y/%{int_name}/%{int_name}-%{version}.tar.gz'
+    # 'https://files.pythonhosted.org/packages/y/yq/yt-%{version}.tar.gz'
+    - '%{name}-%{version}.tar.gz'
 Description: |
 
     yq takes YAML input, converts it to JSON, and pipes it to jq
@@ -27,7 +26,7 @@ Description: |
       Help: https://pypi.org/project/yq/#description
     %endif
 
-SetupOptions: '-q -n %{int_name}-%{version}'
+SetupOptions: '-q -n %{name}-%{version}/upstream'
 BuildArch: noarch
 Configure: none
 Builder: python3

@@ -7,7 +7,6 @@ Name:       python3-yq
 
 # >> macros
 # << macros
-%define int_name yt
 
 Summary:    Command-line YAML/XML processor - jq wrapper for YAML/XML documents
 Version:    2.12.2
@@ -16,7 +15,7 @@ Group:      Applications
 License:    Apache-2.0
 BuildArch:  noarch
 URL:        https://pypi.org/project/yq/
-Source0:    https://files.pythonhosted.org/packages/y/%{int_name}/%{int_name}-%{version}.tar.gz
+Source0:    %{name}-%{version}.tar.gz
 Source100:  python3-yq.yaml
 Requires:   jq
 BuildRequires:  pkgconfig(python)
@@ -40,7 +39,7 @@ Url:
 
 
 %prep
-%setup -q -n %{int_name}-%{version}
+%setup -q -n %{name}-%{version}/upstream
 
 # >> setup
 # << setup
