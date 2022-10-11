@@ -10,7 +10,7 @@ Name:       python3-yq
 %define int_name yq
 
 Summary:    Command-line YAML/XML processor - jq wrapper for YAML/XML documents
-Version:    2.14.0
+Version:    3.1.0
 Release:    0
 Group:      Applications
 License:    Apache-2.0
