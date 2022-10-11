@@ -9,7 +9,7 @@ Name:       python3-yq
 # << macros
 
 Summary:    Command-line YAML/XML processor - jq wrapper for YAML/XML documents
-Version:    2.12.2
+Version:    3.1.0
 Release:    0
 Group:      Applications
 License:    Apache-2.0
@@ -19,6 +19,7 @@ Source0:    %{name}-%{version}.tar.gz
 Source100:  python3-yq.yaml
 Requires:   jq
 BuildRequires:  pkgconfig(python)
+BuildRequires:  python3-yaml >= 3.5.1
 BuildRequires:  python3-rpm-macros
 
 %description
