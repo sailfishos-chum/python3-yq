@@ -19,6 +19,7 @@ Source0:    %{name}-%{version}.tar.gz
 Source100:  python3-yq.yaml
 Requires:   jq
 BuildRequires:  pkgconfig(python)
+BuildRequires:  python3-setuptools_scm >= 3.4.3
 BuildRequires:  python3-yaml >= 3.5.1
 BuildRequires:  python3-rpm-macros
 
