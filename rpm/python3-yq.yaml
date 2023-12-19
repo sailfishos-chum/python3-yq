@@ -1,7 +1,7 @@
 Name: python3-yq
 Summary: Command-line YAML/XML processor - jq wrapper for YAML/XML documents
-# 2.13 needs pyyaml = 5.3.1, SFOS has 5.3 at the moment
 Version: 3.1.1
+# 2.13 needs pyyaml = 5.3.1, SFOS has 5.3 at the moment
 #Version: 2.13.0
 #Version: 2.12.2
 Release: 0
@@ -34,6 +34,8 @@ Builder: python3
 Requires:
   - jq
 PkgBR:
+  - python3-setuptools_scm >= 3.4.3
+  - python3-yaml >= 3.5.1
   - python3-rpm-macros
 PkgConfigBR:
   - python
