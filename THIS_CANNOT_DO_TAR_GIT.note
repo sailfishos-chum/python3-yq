@@ -1,0 +1,3 @@
+Must use either a PyPi tarball, or a full git clone.
+
+tar_git does not provide a full git clone.
