@@ -44,7 +44,8 @@ SubPackages:
       Requires:
         - jq
       Files:
-        - '%{_bindir}/tomlq'
+        # tomlq needs tomlkit which we do not have
+        - '%exclude %{_bindir}/tomlq'
         - '%{_bindir}/xq'
         - '%{_bindir}/yq'
         - '%{python3_sitelib}/%{name}-*.egg-info/'

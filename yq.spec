@@ -74,7 +74,7 @@ rm -rf %{buildroot}
 
 %files -n python3-%{name}
 %defattr(-,root,root,-)
-%{_bindir}/tomlq
+%exclude %{_bindir}/tomlq
 %{_bindir}/xq
 %{_bindir}/yq
 %{python3_sitelib}/%{name}-*.egg-info/
