@@ -18,9 +18,9 @@ URL:        https://pypi.org/project/yq/
 Source0:    https://files.pythonhosted.org/packages/source/y/%{name}/%{name}-%{version}.tar.gz
 Source100:  yq.yaml
 BuildRequires:  pkgconfig(python3)
-BuildRequires:  sailfish-version > 4.5.0
+BuildRequires:  sailfish-version >= 4.5.0
 BuildRequires:  python3-setuptools_scm >= 3.4.3
-BuildRequires:  python3-yaml >= 3.5.1
+BuildRequires:  python3-yaml >= 5.3.1
 BuildRequires:  python3-rpm-macros
 
 %description
