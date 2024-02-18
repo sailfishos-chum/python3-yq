@@ -21,6 +21,8 @@ BuildRequires:  pkgconfig(python3)
 BuildRequires:  sailfish-version >= 4.5.0
 BuildRequires:  python3-setuptools_scm >= 3.4.3
 BuildRequires:  python3-yaml >= 5.3.1
+BuildRequires:  python3dist(pip)
+BuildRequires:  python3dist(toml)
 BuildRequires:  pyproject-rpm-macros
 
 %description
