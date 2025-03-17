@@ -1,0 +1,4 @@
+<multibuild>
+<flavor>python3-yq.spec</flavor>
+<flavor>yq</flavor>
+</multibuild>
