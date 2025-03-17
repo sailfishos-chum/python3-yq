@@ -9,7 +9,7 @@ Name:       yq
 # << macros
 
 Summary:    Command-line YAML/XML processor - jq wrapper for YAML/XML documents
-Version:    3.2.3
+Version:    3.4.3
 Release:    0
 Group:      Applications
 License:    Apache-2.0
