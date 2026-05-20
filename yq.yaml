@@ -27,11 +27,6 @@ SetupOptions: '-q -n %{name}-%{version}'
 BuildArch: noarch
 Configure: none
 Builder: python3
-Macros2:
-  - |
-      ignore;this
-      %generate_buildrequires
-      %pyproject_buildrequires
 PkgBR:
   # mainly because of pyyaml runtime dep:
   - sailfish-version >= 4.5.0
