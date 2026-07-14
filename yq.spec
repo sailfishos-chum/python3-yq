@@ -21,7 +21,7 @@ BuildRequires:  python3dist(wheel)
 
 yq takes YAML input, converts it to JSON, and pipes it to jq
 
-%if "%{?vendor}" == "chum"
+%if 0%{?_chum}
 Title: yq
 Type: console-application
 Categories:

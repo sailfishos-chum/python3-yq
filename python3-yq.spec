@@ -21,14 +21,14 @@ BuildRequires:  python3-rpm-macros
 
 yq takes YAML input, converts it to JSON, and pipes it to jq
 
-%if "%{?vendor}" == "chum"
-PackageName: yq
+%if 0%{?_chum}
+Title: yq
 Type: console-application
 Categories:
  - Utility
 Custom:
   PackagingRepo: https://github.com/sailfishos-chum/python3-yq
-Url:
+Links:
   Homepage: https://pypi.org/project/yq/
   Help: https://pypi.org/project/yq/#description
 %endif
