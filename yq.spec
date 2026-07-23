@@ -1,5 +1,10 @@
 Name:       yq
 
+%if 0%{?sailfishos_version} < 40500
+ExclusiveArch: none
+%endif
+
+
 Summary:    Command-line YAML/XML processor - jq wrapper for YAML/XML documents
 Version:    3.4.3
 Release:    0

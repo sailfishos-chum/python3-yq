@@ -2,6 +2,10 @@ Name:       python3-yq
 
 %define int_name yq
 
+%if 0%{?sailfishos_version} >= 40500
+ExclusiveArch: none
+%endif
+
 Summary:    Command-line YAML/XML processor - jq wrapper for YAML/XML documents
 Version:    3.1.1
 Release:    0
